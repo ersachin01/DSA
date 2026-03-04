@@ -1,11 +1,13 @@
 // Write a Program to print 1 to N using recursion in C++.
+
 #include <iostream>
 using namespace std;
 
 void print1toN(int n)
 {
-    if (n == 0)
+    if (n == 0) // BASE CASE
         return;
+
     print1toN(n - 1);
     cout << n << " ";
 }

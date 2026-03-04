@@ -5,9 +5,9 @@ using namespace std;
 
 void printNto1(int n)
 {
-
-    if (n == 0)
+    if (n == 0) // BASE CASE
         return;
+
     cout << n << " ";
     printNto1(n - 1);
 }
