@@ -22,3 +22,10 @@ int main()
 
     return 0;
 }
+
+// Josephus problem me n log circle me khade hote hain aur har k-th person eliminate hota hai.
+// Process tab tak continue hota hai jab tak ek safe position na mil jaye.
+
+// Recursive relation:
+
+// J(n,k) = (J(n-1,k) + k) % n
