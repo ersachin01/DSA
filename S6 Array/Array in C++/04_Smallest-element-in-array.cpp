@@ -14,17 +14,17 @@ int main()
     {
         cin >> arr[i];
     }
-    // Find the largest element in the array
-    int max = arr[0];
+    // Find the smallest element in the array
+    int min = arr[0];
 
-    // Traverse the array to find the maximum element
+    // Traverse the array to find the minimum element
     for (int i = 0; i < n; i++)
     {
-        if (arr[i] > max)
+        if (arr[i] < min)
         {
-            max = arr[i];
+            min = arr[i];
         }
     }
-    cout << "Largest element in the array is: " << max;
+    cout << "Smallest element in the array is: " << min;
     return 0;
 }
