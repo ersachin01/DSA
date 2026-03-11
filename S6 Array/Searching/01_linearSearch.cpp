@@ -1,3 +1,4 @@
+// C++ program to perform linear search in an array: Time complexity O(n) and space complexity O(1)
 #include <iostream>
 using namespace std;
 
