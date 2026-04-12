@@ -1,3 +1,4 @@
+// Binary Search in C++: Time complexity O(log n) and space complexity O(1)
 #include <iostream>
 using namespace std;
 
@@ -8,18 +9,18 @@ int binarySearch(int *arr, int n, int key)
 
     while (st <= end)
     {
-        int mid = (st + end) / 2;
+        int mid = (st + end) / 2; // Mid
         if (arr[mid] == key)
         {
             return mid;
         }
         else if (arr[mid] < key)
         {
-            st = mid + 1;
+            st = mid + 1; //  right
         }
         else
         {
-            end = mid - 1;
+            end = mid - 1; // left
         }
     }
     return -1; // Key not found
